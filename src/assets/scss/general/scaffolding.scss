@@ -49,30 +49,35 @@ body > #app {
 	white-space: nowrap;
 }
 
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
 .container {
 	margin: 0 auto;
 	width: 100%;
 	padding: 0 16px;
 
-	@media screen and (min-width: $sm) {
-		max-width: 640px;
-	}
-
-	@media screen and (min-width: $md) {
-		max-width: 768px;
-		padding: 0 32px;
-	}
-
-	@media screen and (min-width: $lg) {
-		max-width: 1024px;
-	}
-
-	@media screen and (min-width: $xl) {
-		max-width: 1280px;
-		padding: 0 60px;
-	}
-
-	@media screen and (min-width: $max-content-width) {
-		max-width: 1440px;
-	}
+	//@media screen and (min-width: $sm) {
+	//	max-width: 640px;
+	//}
+	//
+	//@media screen and (min-width: $md) {
+	//	max-width: 768px;
+	//	padding: 0 32px;
+	//}
+	//
+	//@media screen and (min-width: $lg) {
+	//	max-width: 1024px;
+	//}
+	//
+	//@media screen and (min-width: $xl) {
+	//	max-width: 1280px;
+	//	padding: 0 60px;
+	//}
+	//
+	//@media screen and (min-width: $max-content-width) {
+	//	max-width: 1440px;
+	//}
 }

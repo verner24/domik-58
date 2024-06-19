@@ -1,0 +1,72 @@
+html {
+	box-sizing: border-box;
+	height: 100%;
+	line-height: normal;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	height: 100%;
+	padding: 0;
+	font-family: 'Mulish', 'Helvetica', 'Arial', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-weight: normal;
+}
+
+body > #app {
+	display: flex;
+	flex-direction: column;
+	min-height: 100svh;
+}
+
+#app > main {
+	flex: 1 1 auto;
+}
+
+.visually-hidden {
+	position: absolute;
+	overflow: hidden;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	border: 0;
+	margin: -1px;
+	clip: rect(0 0 0 0);
+	clip-path: inset(100%);
+	white-space: nowrap;
+}
+
+.container {
+	margin: 0 auto;
+	width: 100%;
+	padding: 0 16px;
+
+	@media screen and (min-width: $sm) {
+		max-width: 640px;
+	}
+
+	@media screen and (min-width: $md) {
+		max-width: 768px;
+		padding: 0 32px;
+	}
+
+	@media screen and (min-width: $lg) {
+		max-width: 1024px;
+	}
+
+	@media screen and (min-width: $xl) {
+		max-width: 1280px;
+		padding: 0 60px;
+	}
+
+	@media screen and (min-width: $max-content-width) {
+		max-width: 1440px;
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"compilerOptions": {
+		"forceConsistentCasingInFileNames": true,
+		"jsx": "preserve",
+		"jsxImportSource": "vue",
+		"target": "ESNext",
+		"module": "ESNext",
+		"moduleResolution": "Node",
+		"skipLibCheck": true,
+		"isolatedModules": true,
+		"useDefineForClassFields": true,
+		"strict": true,
+		"noImplicitThis": true,
+		"esModuleInterop": true,
+		"types": ["node", "webpack-env"],
+		"verbatimModuleSyntax": true,
+		"allowJs": true,
+		"noEmit": true,
+		"resolveJsonModule": true,
+		"allowSyntheticDefaultImports": true,
+		"lib": ["ESNext", "dom"],
+		/* */
+		"baseUrl": ".",
+		"typeRoots": ["./types", "./node_modules/@types"],
+		"paths": {
+			"@/*": ["src/*"],
+			"@components/*": ["src/vue/components/*"],
+			"@assets/*": ["src/assets/*"]
+		}
+	},
+	"include": ["src", "global.d.ts"],
+	"exclude": ["node_modules", "dist"]
+}

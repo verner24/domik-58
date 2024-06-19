@@ -1,3 +1,70 @@
 .header {
-  color: red;
+  border-bottom: 1px solid #f5f5f5;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0;
+
+    @media screen and (min-width: 1024px) {
+      padding: 12px;
+    }
+  }
+  &__call {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #62c03d;
+    border-radius: 50%;
+  }
+}
+.burger {
+  padding: 0;
+  border: none;
+  margin: 0;
+  background: 0 0;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  width: 32px;
+  height: 32px;
+  transition-duration: 1s;
+
+  &__line {
+    position: absolute;
+    left: 4px;
+    width: 24px;
+    height: 2px;
+    background-color: #878989;
+    border-radius: 20px;
+    transition-delay: .25s;
+    transition-duration: .25s;
+  }
+  &__line::before {
+    position: absolute;
+    top: -6px;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: #878989;
+    border-radius: 20px;
+    content: "";
+    transition: transform .25s, top .25s .25s;
+    transition-duration: .25s;
+  }
+  &__line::after {
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: #878989;
+    border-radius: 20px;
+    content: "";
+    transition: transform .25s, top .25s .25s;
+    transition-duration: .25s;
+  }
 }

@@ -5,7 +5,7 @@ const sub_content = document.querySelector('.sublist__content')
 const sub_btn = document.querySelector('.sublist__btn')
 
 burger.onclick = function () {
-	if(document.querySelector('.active')) {
+	if (document.querySelector('.active')) {
 		navbar.classList.remove('active')
 		burger.classList.remove('active')
 	} else {
@@ -14,7 +14,7 @@ burger.onclick = function () {
 	}
 }
 sublist.onclick = function () {
-	if(document.querySelector('.open')) {
+	if (document.querySelector('.open')) {
 		sub_content.classList.remove('open')
 		sub_btn.classList.remove('open')
 	} else {

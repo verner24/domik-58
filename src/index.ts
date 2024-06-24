@@ -1,9 +1,9 @@
 // import '@assets/css/tailwind.css'
+import '@/vue/index'
 import '@assets/css/normalize.css'
 import '@assets/scss/index.scss'
 import '@assets/icons'
 import '@/common.blocks'
-// import '@/vue/index'
 
 export default function requireAll(r: __WebpackModuleApi.RequireContext): void {
 	r.keys().forEach(r)

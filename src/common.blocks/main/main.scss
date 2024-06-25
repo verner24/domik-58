@@ -9,8 +9,13 @@
     gap: 16px;
     margin-bottom: 24px;
   }
+  &__head-img {
+    display: none;
+  }
   &__banner-btn {
     width: 100%;
+    font-size: 16px;
+    margin-top: 16px;
   }
   &__catalog {
     position: relative;
@@ -38,6 +43,11 @@
     margin-bottom: 16px;
     display: flex;
     gap: 8px;
+  }
+  &__catalog-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
   }
   &__catalog-tags {
     list-style: none;
@@ -87,6 +97,10 @@
     padding-block: 48px;
     margin-block: 56px;
   }
+  &__guide-block {
+    display: flex;
+    flex-direction: column;
+  }
   &__guide-title {
     text-align: center;
   }
@@ -109,6 +123,9 @@
     background: var(--lightgreen-background);
     border-radius: 32px;
   }
+  &__advantages-block {
+    display: none;
+  }
   &__services-link {
     color: var(--green-default);
     display: flex;
@@ -116,12 +133,18 @@
     gap: 12px;
     margin-bottom: 16px;
   }
+  &__services-block {
+    display: none;
+  }
   &__services-slider {
     margin-left: 16px;
   }
   &__conditions {
     padding-block: 48px;
     background: var(--lightgreen-background);
+  }
+  &__conditions-block {
+    display: none;
   }
   &__conditions-subtitle {
     margin-bottom: 32px;

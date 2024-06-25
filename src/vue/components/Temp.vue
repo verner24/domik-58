@@ -49,6 +49,7 @@ export default {
 		:slides-per-view="1"
 		:space-between="50"
 		:pagination="{ clickable: true }"
+    class="swiper-id"
 	>
 		<swiper-slide class='img-wrapper'>
 			<svg width='120' height='120' viewBox='0 0 120 120'>
@@ -116,5 +117,26 @@ export default {
 	background-size: cover;
 	background-position: center;
 	margin-bottom: 16px;
+}
+
+@media screen and (min-width: 1280px) {
+  .swiper {
+    width: 92%;
+    height: 498px;
+  }
+  .swiper-pagination {
+    position: absolute;
+    bottom: -5px !important;
+    width: 100%;
+  }
+  .swiper-pagination-bullet {
+    border-radius: 1px;
+    width: 23%;
+    height: 2px;
+  }
+  .image-swiper {
+    width: inherit;
+    height: 96%;
+  }
 }
 </style>

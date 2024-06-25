@@ -10,19 +10,19 @@ function closeModal() {
 	<dialog>
 		<div class='modal-background'>
 		</div>
-		<div class='modal-container'>
-			<span class='modal-container__title title-2'>
+		<div class='modal-container-resolve'>
+			<span class='modal-container-resolve__title title-2'>
 				Спасибо за заявку!
 			</span>
-			<span class='modal-container__subtitle'>
+			<span class='modal-container-resolve__subtitle'>
 				Мы свяжемся с вами в ближайшее время, чтобы обсудить все детали.
 			</span>
-			<button class='modal-container__btn' @click='closeModal'>
+			<button class='modal-container-resolve__btn' @click='closeModal'>
 				<svg width='32' height='32' viewBox='0 0 32 32'>
 					<use xlink:href='#Cross'></use>
 				</svg>
 			</button>
-			<button class='modal-container__submit-btn btn-1 btn-1__green' @click='closeModal'>
+			<button class='modal-container-resolve__submit-btn btn-1 btn-1__green' @click='closeModal'>
 				Хорошо
 			</button>
 		</div>
@@ -40,7 +40,7 @@ function closeModal() {
 	background-color: #000000;
 	opacity: 0.3;
 }
-.modal-container {
+.modal-container-resolve {
 	position: absolute;
 	left: 50%;
 	top: 50%;

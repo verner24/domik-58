@@ -22,8 +22,7 @@ export default {
 
 		function submit() {
 			this.$v.$touch()
-			if (this.$v.$invalid) {
-			} else {
+			if (!this.$v.$invalid) {
 				setTimeout(() => {
 					this.state.phone = ''
 					this.state.name = ''
@@ -34,7 +33,7 @@ export default {
 
 					oldModal.classList.remove('modal-active')
 					modal.classList.add('resolve-modal-active')
-				}, 1000)
+				}, 3000)
 			}
 		}
 
@@ -96,8 +95,8 @@ export default {
 				>
 				</textarea>
 				<button
-					class='form__submit-btn btn-1 btn-1__disabled'
-					:class="{ 'btn-1__yellow': !$v.$invalid }"
+					class='form__submit-btn btn-1'
+					:class="{ 'btn-1__yellow': !$v.$invalid, 'btn-1__disabled': $v.$invalid }"
 					:disabled='$v.$invalid'
 					@click.stop.prevent='submit'
 				>
